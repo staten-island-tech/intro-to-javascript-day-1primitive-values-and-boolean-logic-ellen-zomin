@@ -41,10 +41,55 @@ let undefinedVar; */
 //console.log(truuStatement);
 
 ///if/ else if statements
-let student = "Karen";
-let age = 17;
+//let student = "Karen";
+//let age = 17;
 // console.log(student === "Karen"); /// true
 // console.log(student === "karen"); ///false
 // console.log(student == "karen"); ///false
-console.log(age === "17"); 
-console.log(age == "17");
+//console.log(age === "17"); ///false
+//console.log(age == "17"); ///true
+
+//let age = 16;
+//let name = "Kristy";
+/*console.log(age < 17);
+console.log(age <= 17);
+console.log(age >= 17);*/
+//console.log(age == 16 || age == 17); // if age equals 16 OR age ==17 then true
+//console.log(age == 16 && name=== "Angel"); 
+//console.log(age !== 1); 
+
+/////////////if statements
+/*let age = 18;
+if (age < 18){
+    console.log("You are a child");
+} else if(age >= 18){
+    console.log("you are an adult now");
+}
+    */
+/*let school = "";
+if(school == "elementary"){
+    console.log("you are in elementary school");
+}else if(school == "middle"){
+    console.log("you are in middle school");
+}else {
+    console.log("you are in high school");
+} */
+
+////////////////////functions
+/*function test(){
+    console.log("I am a function");
+}
+test(); */
+function argument(argument){
+   console.log(argument); 
+}
+//argument("Edis");
+function add(x, y){
+    return x + y; //return ends the function
+}
+//console.log(add(2, 7));
+let z = function add(x, y){
+    return x + y; //return ends the function
+};
+z(1, 11);
+console.log(z(1, 11));
