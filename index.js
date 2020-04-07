@@ -80,7 +80,7 @@ if(school == "elementary"){
     console.log("I am a function");
 }
 test(); */
-function argument(argument){
+/*function argument(argument){
    console.log(argument); 
 }
 //argument("Edis");
@@ -92,4 +92,75 @@ let z = function add(x, y){
     return x + y; //return ends the function
 };
 z(1, 11);
-console.log(z(1, 11));
+console.log(z(1, 11)); */
+//////////////////////////////////Scoping
+//let x = "x";
+//const z = "z";  //99% of the time
+/*const hello = function() {
+    alert("hello");
+    alert("hello");
+    alert("hello");
+    alert("hello");
+    alert("hello");
+    alert("hello");
+    alert("hello");
+}
+const bye = function() {
+    alert("bye");
+};
+
+function beatles{
+    hello();
+    bye();
+    hello();
+    bye();
+}
+beatles();*/
+
+//global or window scope
+
+/*function hello(){
+    const name = "Jaiyu";
+    console.log(name);
+} */
+/*hello();
+makeFunc();
+*/
+
+/*function makeFunc() {
+    //function scope
+    const name = "Sun"
+    function displayName(){
+        alert(name); //still has access to outer variable name
+    }
+    return displayName; //returning the inner function
+}
+
+const myFunc = makeFunc(); 
+myFunc();
+*/
+
+//////Arrays
+/*const names = ["Michelle", "Edis", "Richard", "Vincent", "Gisele"];
+
+names.forEach(name => console.log(name)); */
+//arrow function 1) Always returned 2) this is changed
+const students = [
+    "Riya", 
+    "Omar", 
+    "Alan", 
+    "Jaiyu", 
+    "Michael", 
+    "Lisa", 
+    "Richard"
+];
+
+//Filter above array for all students whose name contains less than 5 characters
+const result = students.filter(student => student.length < 5);
+console.log(result);
+
+///challenge 2
+//1) does it "include" "Junshen"
+console.log(arr.includes("Junshen"));
+//2) check for "alan" or "sava" "some"
+students.some(name => ["alan", "sava"].includes(name));
